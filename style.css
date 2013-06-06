@@ -1,0 +1,438 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/******************************************************************************************************
+	Header & Wrapper
+******************************************************************************************************/
+
+#wrapper {
+	margin:30px 0px 0px 40px;
+}
+#header {
+	position:relative;
+	height:110px;
+	min-width:100%;
+	margin: 0 -8px;
+	top:-9px;
+	background:url("images/header-bg.png") top repeat-x;
+}
+a#nameplate{
+	background:url(images/ua-logo.png) top left no-repeat;
+	width:217px;
+	height:62px;
+	position:absolute;
+	top:25px;
+	right:20px;
+	text-indent:-9999px;
+	margin:0;
+}
+
+/******************************************************************************************************
+	Body, Background, Paragraphs, Lists, Fonts, etc.
+******************************************************************************************************/
+
+body {
+	font: normal 100% "Lucida Sans",Lucida Sans Unicode,Verdana,Arial,sans-serif;
+	font-size:100%;
+	line-height:20px;
+	background:#FFF;
+}
+p {
+	text-align:center;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:16px;
+	color:#000000;
+	line-height: 1.4em;
+	margin:0 0 15px 0;
+}
+p#app_infoblurb {
+	text-align:left;
+	text-shadow:none;
+}
+h1.app_name {
+	color:#226;
+	font-size:18px;
+	margin-left:15px;
+	margin-bottom:-18px;
+}
+form,input,select,textarea {
+	margin:0;
+	padding:0;
+	color:#000000;
+}
+select {
+	background-color:#000000;
+	width:20%;
+}
+ul.centered {
+	width:40%;
+	padding-left:38%;
+}
+ul.centered li a {
+	text-align:center;
+	display:list-item;
+}
+ul.left {
+	width:87%;
+	padding-left:15%;
+}
+ul.left li {
+	min-width:100%;
+}
+ul.left li a {
+	text-align:center;
+	text-indent:15px;
+	width:75%;
+	display:list-item;
+}
+li {
+	list-style:none;
+}
+
+/******************************************************************************************************
+	Forms & Boxes
+******************************************************************************************************/
+
+.box {
+	margin:0 auto;
+	width:500px;
+	background:#F5F5F5;
+	position:relative;
+	top:50px;
+	border:1px solid #262626;
+}
+.box h1 { 
+	color:#111111;
+	font-size:18px;
+	padding-left:10px;
+}
+.box label {
+	width:100%;
+	display: block;
+	background:#DDD;
+	border-top:1px solid #262626;
+	border-bottom:1px solid #161712;
+	padding:10px 0 10px 0;
+}
+.box label span {
+	display: block;
+	color:#1C1C1C;
+	font-size:12px;
+	float:left;
+	width:100px;
+	text-align:right;
+	padding:5px 20px 0 0;
+}
+div.box .input_text {
+	padding:10px 10px;
+	width:200px;
+	background:#F5F5F5;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}
+.box .message {
+	padding:7px 7px;
+	width:350px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+	overflow:hidden;
+	height:150px;
+}
+.box .check {
+	padding:10px 10px;
+	width:50px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}
+.box .button {
+	margin:0 0 10px 0;
+	padding:4px 7px;
+	background:#969696;
+	border:0px;
+	position: relative;
+	top:10px;
+	left:190px;
+	width:100px;
+	border-bottom:1px double #666;
+	border-top:1px double #666;
+	border-left:1px double #333;
+	border-right:1px double #333;
+}
+#app_info_container {
+/*	border: 1px solid red;	*/
+	position:absolute;
+	width:76%;
+}
+#app_info {
+/*	border: 1px solid green;	*/
+	position:relative;
+	width:70%;
+	margin:10px 5px 10px 235px;
+}
+#app_supportinfo {
+	margin: 10px 10px 10px 40px;
+/*	border:1px solid blue;	*/
+	height:300px;
+	width:190px;
+	position:absolute;
+}
+#app_supportinfo p {
+	text-align:center;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#000000;
+	text-align:left;
+	text-shadow:none;
+}
+#app_icon_large_border {
+	background-image:url(images/installatron_app_icons/i_legacy_icon_bg.gif) no-repeat;
+	background-color:#E3E9F0;
+	position:absolute;
+	margin:15px 15px 15px 30px;
+	padding:2px;
+	width:175px;
+	height:175px;
+	border-top-left-radius:16px 16px;
+	border-top-right-radius:16px 16px;
+	border-bottom-right-radius:16px 16px;
+	border-bottom-left-radius:16px 16px;
+}
+#app_screenshot_box {
+/*	border:1px solid orange;	*/
+	margin: 1% 10%;
+	position:relative;
+	margin-left:300px;
+	height:auto;
+}
+#app_screenshot_box .rounded_box_header {
+	position:relative;
+	width:545px;
+	max-width:545px;
+	height:380px;
+}
+#app_screenshot_box .rounded_box {
+/*	border:1px dashed #0F6;		*/
+	position:relative;
+	left:-10px;
+	height:410px;
+	min-width:545px;
+	max-width:500px;
+}
+#app_screenshot_box .rounded_box .rounded_box_header p {
+	padding:10px 15px;
+	text-align:center;	
+	color:#000;
+	font-size:15px;
+	text-shadow:#CCC 0px 1px 1px;
+	height:5px
+}
+#app_screenshot_box .rounded_box .rounded_box_header .rounded_box_content {
+	max-width:100%;
+/*	border:1px dashed blue;		*/
+}
+
+/******************************************************************************************************
+	Rounded Boxes
+******************************************************************************************************/
+
+#R1 {min-height:50%;}
+#R2 {min-height:50%;}
+#R3 {min-height:50%;}
+.rounded {
+	width:47%;
+	background:#FFF;
+	margin:5px;
+	float:left;
+	border: 3px double #AAAAAA;
+  -moz-border-radius:3ex;
+  -webkit-border-radius:3ex;
+}
+.rounded p {
+	font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.rounded_box {
+	margin:20px 9%;
+	width:80%;
+	min-width:800px;
+	height:800px;
+	background-color:#E3E9F0;
+	border:2px solid #E3E9F0;
+  -moz-border-radius:3ex;
+  -webkit-border-radius:3ex;
+}
+.rounded_box_header {
+	height:100%;
+}
+.rounded_box_header p {
+	padding:10px 15px;
+	text-align:center;	
+	color:#000;
+	font-size:15px;
+	text-shadow:#CCC 0px 1px 1px;
+	height:5px;
+}
+.rounded_box .rounded_box_content {
+	text-align:left;
+	background-color:#F9FAFB;
+	min-width:100%;
+	height:90%;
+	padding:10px 0px;
+	border: 3px hidden #AAAAAA;
+  -moz-border-radius-bottomleft:3ex;
+  -moz-border-radius-bottomright:3ex;
+  -webkit-border-bottom-right-radius:3ex;
+  -webkit-border-bottom-left-radius:3ex;
+}
+.rounded_box_content {
+	text-align:left;
+	background-color:#F9FAFB;
+	min-width:100%;
+	height:60%;
+	padding:10px 0px;
+	border: 3px hidden #AAAAAA;
+  -moz-border-radius-bottomleft:3ex;
+  -moz-border-radius-bottomright:3ex;
+  -webkit-border-bottom-right-radius:3ex;
+  -webkit-border-bottom-left-radius:3ex;
+}
+a.rounded {
+	padding: 0px 5px;
+	height:20px;
+	background:url(images/button_fade.jpg) repeat-x;
+	border:1px solid #888;
+	margin:5px;
+	float:none;
+	list-style:none;
+  -moz-border-radius:3ex;
+  -webkit-border-radius:3ex;
+}
+a.rounded:hover {
+	background:#FFF;	
+}
+
+
+/******************************************************************************************************
+	General Links & Buttons
+******************************************************************************************************/
+
+a:link,a:visited,a:hover,a:active {
+	color:#000;
+	border-color:#FFF;
+	text-decoration:none;
+}
+a#logout {
+	float:right;
+	font-weight:lighter;
+	width:50px;
+	text-align:center;
+	font-size:12px;
+	margin:115px 5px 10px 0;
+}
+.table_button {
+	font: bold 12px "Lucida Grande", Verdana, sans-serif;
+	color:black;
+	margin:0 0 0px 0;
+	padding:4px 7px;
+	background:#CCC;
+	border:0px;
+	position: relative;
+	width:auto;
+	border-bottom:1px double #666;
+	border-top:1px double #666;
+	border-left:1px double #333;
+	border-right:1px double #333;
+}
+.button {
+	margin:0 0 10px 0;
+	padding:4px 7px;
+	background:#CC0000;
+	border:0px;
+	position: relative;
+	top:10px;
+	left:190px;
+	width:100px;
+	border-bottom: 1px double #660000;
+	border-top: 1px double #660000;
+	border-left:1px double #FF0033;
+	border-right:1px double #FF0033;
+}
+
+/******************************************************************************************************
+	Modal Window
+******************************************************************************************************/
+
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+#boxes #dialog {
+/*  width:375px; 
+  height:203px;		*/
+  position:absolute;
+  min-height:700px;
+  min-width:700px;
+  height:100%;
+  width:100%;
+  padding:10px;
+  margin:20% 0 0 15%;
+}
+#boxes #dialog a {
+	color:#CCC;
+}
+a.close {
+	display:inline;
+	position:absolute;
+	background-image:url("images/modal-window-close.gif") no repeat-y;
+	float:right;
+	top:-5px;
+	bottom:8px;
+	height:24px;
+}
+
+/******************************************************************************************************
+	Images, Icons, Logos
+******************************************************************************************************/
+
+img.app_logo {
+	margin: 1% 0px 0px 36%;
+}
+img.app_icon_large {
+	width:175px;
+	height::175px;
+	border-top-left-radius:14px 14px;
+	border-top-right-radius:14px 14px;
+	border-bottom-right-radius:14px 14px;
+	border-bottom-left-radius:14px 14px;
+}
+img[width=80%] {
+	width:80%;
+}
+
+/******************************************************************************************************
+	
+******************************************************************************************************/
