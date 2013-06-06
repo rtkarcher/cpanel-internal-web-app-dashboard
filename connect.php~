@@ -1,0 +1,11 @@
+<?php
+$hostname = "localhost";
+$database = "area51_sapfam";
+$username = "area51_sapfam";
+$password = "vcgyt8.1DtD)";
+$connection = mysql_connect($hostname, $username, $password) or die(mysql_error());
+
+mysql_connect('localhost', 'area51_sapfam', 'vcgyt8.1DtD)') or die(mysql_error());
+mysql_select_db($database, $connection) or die(mysql_error());
+?>
+
